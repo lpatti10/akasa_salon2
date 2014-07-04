@@ -45,10 +45,10 @@ header {
     padding-top: 150px;
     height: 380px;
     text-align: center;
-    color: White;
+    color: #fff;
     a {
       font-size: 0.8em;
-      letter-spacing: 0.08em;
+      // letter-spacing: 0.08em;
       color: rgba(255,255,255,0.85);
       line-height: 30px;
       padding: 7px 14px;
@@ -64,7 +64,13 @@ header {
   p {
     font-size: 1.5em;
     margin-bottom: 0.7em;
-    font-family: "Times New Roman";
+    font-family:"Playfair Display", serif;
+    font-weight: 400;
+    // font-style: italic;
+    & > span {
+      font-size: 2.0em;
+      vertical-align: -0.15em;
+    }
   }
 }
 h1 {
@@ -101,16 +107,94 @@ nav ul li a.active, nav ul li a:hover {
   color: white;
 }
 
-.container {
-  height: 600px;
-  background: white;
-  z-index: 1;
-  padding: 0px 20px;
-  #overview {
-    max-width: 600px;
-    margin: 0 auto;
-    padding-top: 40px;
-
+.overview {
+  max-width: 600px;
+  margin: 0 auto;
+  // height: 60px;
+  // border-top: 1px rgba(255,255,255,0.35) solid;
+  color: #fff;
+  font-family:"Playfair Display", serif;
+  font-weight: 400;
+  // font-style: italic;
+  padding: 40px;
+  padding-bottom: 20px;
+  font-size:1.2em;
+  text-align: center;
+  line-height: 30px;
+}
+div.button {
+  height: auto;
+  margin-top: 0px;
+  padding-top: 0px;
+  a.button {
+  text-align: center;
+  font-size: 0.8em;
+  letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.85);
+  line-height: 30px;
+  padding: 7px 14px;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 2em;
+  transition: all 0.3s ease;
+  &:hover {
+    background: white;
+    color: Gray;
+    }  
   }
 }
+
+
+
+
+.container {
+  height: 600px;
+  background: #fff;
+  z-index: 1;
+  padding: 0px 20px;
+}
+
+/****************** FOOTER STYLES *******************/
+
+.container_bottom {
+  margin: 0 auto;
+  width: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+small.sub_left {
+  margin: 0px;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.05em;
+  font-size: 1.0em;
+}
+
+// #navlist {
+//   list-style: none;
+//   padding: 0;
+//   margin-left: 10px;
+//   margin-right: 50px;
+// }
+
+// #navlist, li.sub_right {
+//   float: right;
+//   margin-left: 10px;
+//   padding: 0;
+//   font-size: 11px;
+//   color: #A4B3BF;
+//   margin-top: 30px;
+// }
+
+// a.sub_right {
+//   color: #A4B3BF;
+//   font-size: 12px;
+//   font-family: 'Raleway', sans-serif;
+//   text-decoration: none;
+// }
+
+
+
+
 
