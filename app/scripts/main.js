@@ -13,6 +13,7 @@ $(".tile").hover( function(){
     return $(".blur").css("opacity", scrollBlur);
   });
 
+//Commenting this out will omit blur on scroll
 }).call(this);
 
 
