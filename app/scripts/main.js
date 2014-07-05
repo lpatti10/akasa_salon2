@@ -1,11 +1,5 @@
 
-// #https://github.com/andreasstorm
-
-// $(window).scroll ->
-//   oVal = ($(window).scrollTop() / 240)
-//   $(".blur").css "opacity", oVal;
-
-
+//Hero image blur on scroll
 (function() {
   $(window).scroll(function() {
     var scrollBlur;
@@ -15,15 +9,10 @@
 
 }).call(this);
 
-//Rollover state for spotlight features
-$("tile").hover( function(){
-	  $(this).addClass("overlay");
+//Hover state for spotlight features
+$(".tile").hover( function(){
+	  $(this).addClass("border");
 	  }, function() {
-	 	  $(this).removeClass("overlay");
+	 	$(this).removeClass("border");
 });
 
- // $("#cornsilk").hover( function(){
- //    $(this).css("width", "50px");
- //    }, function() {
-	//   	$(this).css("width", "150px");
-	// });
