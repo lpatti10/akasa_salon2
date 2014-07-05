@@ -64,8 +64,6 @@ header {
   }
 }
 h1 {
-  // font-weight: 800;
-  // font-size: 3.4em;
   margin-bottom: 0.2em;
 }
 h3 {
@@ -126,8 +124,8 @@ p.overview {
   margin: 0 auto;
   color: #fff;
   // font-family:"Playfair Display", serif;
-  font-family: 'Raleway', sans-serif;
   // font-weight: 400;
+  font-family: 'Raleway', sans-serif;
   padding: 0px;
   padding-bottom: 20px;
   padding-top: 10px;
@@ -178,10 +176,6 @@ section.featured {
   }
   cursor: pointer;
   background: #fff;
-  // height: 302px;
-  // width:302px;
-  // border-radius: 302px;
-  // background-image: linear-gradient(#A03999, #A55474);
 }
 
 .border {
@@ -196,7 +190,6 @@ section.featured {
   padding: 0px 20px;
 }
 
-/****************** FOOTER STYLES *******************/
 
 .container_bottom {
   margin: 0 auto;
@@ -214,28 +207,6 @@ small.sub_left {
   font-size: 1.0em;
 }
 
-// #navlist {
-//   list-style: none;
-//   padding: 0;
-//   margin-left: 10px;
-//   margin-right: 50px;
-// }
-
-// #navlist, li.sub_right {
-//   float: right;
-//   margin-left: 10px;
-//   padding: 0;
-//   font-size: 11px;
-//   color: #A4B3BF;
-//   margin-top: 30px;
-// }
-
-// a.sub_right {
-//   color: #A4B3BF;
-//   font-size: 12px;
-//   font-family: 'Raleway', sans-serif;
-//   text-decoration: none;
-// }
 
 
 

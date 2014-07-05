@@ -1,3 +1,9 @@
+//Hover state for spotlight features
+$(".tile").hover( function(){
+	  $(this).addClass("border");
+	  }, function() {
+	 	$(this).removeClass("border");
+});
 
 //Hero image blur on scroll
 (function() {
@@ -9,10 +15,4 @@
 
 }).call(this);
 
-//Hover state for spotlight features
-$(".tile").hover( function(){
-	  $(this).addClass("border");
-	  }, function() {
-	 	$(this).removeClass("border");
-});
 
