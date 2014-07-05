@@ -14,3 +14,16 @@
   });
 
 }).call(this);
+
+//Rollover state for spotlight features
+$("tile").hover( function(){
+	  $(this).addClass("overlay");
+	  }, function() {
+	 	  $(this).removeClass("overlay");
+});
+
+ // $("#cornsilk").hover( function(){
+ //    $(this).css("width", "50px");
+ //    }, function() {
+	//   	$(this).css("width", "150px");
+	// });

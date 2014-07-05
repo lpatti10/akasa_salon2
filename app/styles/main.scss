@@ -3,7 +3,8 @@
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 
 // Custom Styles
-
+$mobile: new-breakpoint(max-width 550px);
+$desktop: new-breakpoint(min-width 850px);
 
 body {
   font-size: 14px;
@@ -48,7 +49,7 @@ header {
     color: #fff;
     a {
       font-size: 0.8em;
-      // letter-spacing: 0.08em;
+      letter-spacing: 0.08em;
       color: rgba(255,255,255,0.85);
       line-height: 30px;
       padding: 7px 14px;
@@ -59,17 +60,6 @@ header {
         background: white;
         color: Gray;
       }  
-    }
-  }
-  p {
-    font-size: 1.5em;
-    margin-bottom: 0.7em;
-    font-family:"Playfair Display", serif;
-    font-weight: 400;
-    // font-style: italic;
-    & > span {
-      font-size: 2.0em;
-      vertical-align: -0.15em;
     }
   }
 }
@@ -107,20 +97,36 @@ nav ul li a.active, nav ul li a:hover {
   color: white;
 }
 
-.overview {
+.messaging {
+  height: auto;
+  margin-top: 0px;
+  padding-top: 40px;
+  > p {
+    font-size: 1.2em;
+    margin-bottom: 0.7em;
+    font-family:"Playfair Display SC", serif;
+    font-weight: 400;
+    letter-spacing: .04em;
+    & > span {
+      font-size: 2.0em;
+      vertical-align: -0.15em;
+    }
+  }
+}
+p.overview {
   max-width: 600px;
   margin: 0 auto;
-  // height: 60px;
-  // border-top: 1px rgba(255,255,255,0.35) solid;
   color: #fff;
-  font-family:"Playfair Display", serif;
-  font-weight: 400;
-  // font-style: italic;
-  padding: 40px;
+  // font-family:"Playfair Display", serif;
+  font-family: 'Raleway', sans-serif;
+  // font-weight: 400;
+  padding: 0px;
   padding-bottom: 20px;
-  font-size:1.2em;
+  padding-top: 10px;
+  font-size: 2.0em;
   text-align: center;
-  line-height: 30px;
+  line-height: 40px;
+  letter-spacing: .05em;
 }
 div.button {
   height: auto;
@@ -143,8 +149,35 @@ div.button {
   }
 }
 
+.spotlights {
+  background: #fff;
+  opacity: 0.9;
+}
 
+section.featured {
+  @include outer-container;
+  // background: #fff;
+  height: 400px;
+  padding-top: 40px;
+}
 
+.tile {
+  @include media($mobile) {
+    @include span-columns(12);
+  }
+  @include media($desktop) {
+    @include span-columns(4);
+  }
+  background: #fff;
+  // height: 302px;
+  // width:302px;
+  // border-radius: 302px;
+  // background-image: linear-gradient(#A03999, #A55474);
+}
+
+.overlay {
+  background: black;
+}
 
 .container {
   height: 600px;
